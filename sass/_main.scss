@@ -1,0 +1,56 @@
+/*MAIN*/
+$base-color: rgb(34, 34, 34);
+$accent-color: rgb(255, 149, 174);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+}
+
+.flex-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul li {
+  text-transform: uppercase;
+  list-style: none;
+
+  a {
+    color: $base-color;
+    background: $accent-color;
+    padding: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent-color;
+      background: $base-color;
+      transition: ease-in 0.2s;
+    }
+  }
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+.galleryFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  // flex: 1;
+}
