@@ -10,12 +10,25 @@ body {
   font-size: 2rem;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1 {
+  font-size: 8rem;
+  color: $accent-color;
+  border-bottom: 3px solid $accent-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
   font-size: 5rem;
+  text-transform: uppercase;
 }
 
 nav {
-  width: 100vw;
   height: 10vh;
 }
 
@@ -33,6 +46,7 @@ ul li {
     color: $base-color;
     background: $accent-color;
     padding: 20px;
+    border-radius: 25px;
     text-decoration: none;
 
     &:hover {
@@ -51,6 +65,33 @@ img {
 .galleryFlex {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   // flex: 1;
+
+  img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  .profilePic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  background: $accent-color;
+  padding: 10px;
+  text-align: center;
 }

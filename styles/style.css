@@ -216,12 +216,25 @@ body {
   font-size: 2rem;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1 {
+  font-size: 8rem;
+  color: #ff95ae;
+  border-bottom: 3px solid #ff95ae;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
   font-size: 5rem;
+  text-transform: uppercase;
 }
 
 nav {
-  width: 100vw;
   height: 10vh;
 }
 
@@ -247,6 +260,7 @@ ul li a {
   color: #222222;
   background: #ff95ae;
   padding: 20px;
+  border-radius: 25px;
   text-decoration: none;
 }
 
@@ -268,8 +282,41 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.galleryFlex img {
+  height: 500px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid .profilePic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  margin-top: 20px;
+  background: #ff95ae;
+  padding: 10px;
+  text-align: center;
 }
