@@ -390,6 +390,9 @@ footer {
 }
 
 @media (max-width: 755px) {
+  p {
+    text-align: center;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -412,7 +415,7 @@ footer {
             align-items: center;
   }
   nav {
-    height: 25vh;
+    height: 300px;
   }
   .flex-nav ul {
     -webkit-box-orient: vertical;
@@ -427,7 +430,13 @@ footer {
             align-items: center;
   }
   .flex-nav ul li {
-    margin-bottom: 2em;
+    padding: 20px;
+    margin-bottom: 1em;
+  }
+  .flex-nav ul a {
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid #ff95ae;
   }
 }
 
