@@ -10,6 +10,11 @@ body {
   font-size: 2rem;
 }
 
+img {
+  width: 20%;
+  height: 20%;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,7 +32,13 @@ h2 {
   font-size: 5rem;
   text-transform: uppercase;
   background: $accent-color;
-  padding: 5px;
+  padding: 5px 10px;
+}
+
+h3 {
+  color: $accent-color;
+  border-bottom: 2px solid $base-color;
+  text-transform: uppercase;
 }
 
 nav {
@@ -59,11 +70,6 @@ ul li {
   }
 }
 
-img {
-  width: 20%;
-  height: 20%;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -74,7 +80,13 @@ img {
     height: 200px;
     width: 200px;
     object-fit: cover;
+    // display: block;
+    // margin: 0 auto;
   }
+}
+
+p {
+  padding: 5px;
 }
 
 .galleryFlex {

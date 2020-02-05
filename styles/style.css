@@ -216,6 +216,11 @@ body {
   font-size: 2rem;
 }
 
+img {
+  width: 20%;
+  height: 20%;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -233,7 +238,13 @@ h2 {
   font-size: 5rem;
   text-transform: uppercase;
   background: #ff95ae;
-  padding: 5px;
+  padding: 5px 10px;
+}
+
+h3 {
+  color: #ff95ae;
+  border-bottom: 2px solid #222222;
+  text-transform: uppercase;
 }
 
 nav {
@@ -273,11 +284,6 @@ ul li a:hover {
   transition: ease-in 0.2s;
 }
 
-img {
-  width: 20%;
-  height: 20%;
-}
-
 .grid {
   display: -ms-grid;
   display: grid;
@@ -292,6 +298,10 @@ img {
   width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+p {
+  padding: 5px;
 }
 
 .galleryFlex {
