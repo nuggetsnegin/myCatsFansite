@@ -232,6 +232,8 @@ h1 {
 h2 {
   font-size: 5rem;
   text-transform: uppercase;
+  background: #ff95ae;
+  padding: 5px;
 }
 
 nav {
@@ -276,34 +278,12 @@ img {
   height: 20%;
 }
 
-.galleryFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.galleryFlex img {
-  height: 500px;
-  width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  gap: 50px;
 }
 
 .grid .profilePic {
@@ -312,6 +292,22 @@ img {
   width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.galleryFlex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.galleryFlex img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #ff95ae;
 }
 
 footer {

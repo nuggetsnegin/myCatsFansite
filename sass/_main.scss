@@ -26,6 +26,8 @@ h1 {
 h2 {
   font-size: 5rem;
   text-transform: uppercase;
+  background: $accent-color;
+  padding: 5px;
 }
 
 nav {
@@ -62,30 +64,29 @@ img {
   height: 20%;
 }
 
-.galleryFlex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  // flex: 1;
-
-  img {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-  }
-}
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
 
   .profilePic {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     object-fit: cover;
+  }
+}
+
+.galleryFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 5px solid $accent-color;
   }
 }
 
