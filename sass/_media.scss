@@ -1,0 +1,44 @@
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galleryFlex {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    // align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  h2 {
+    text-align: center;
+  }
+  .grid {
+    display: block;
+  }
+
+  .catInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    h2 {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
