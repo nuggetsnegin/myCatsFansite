@@ -330,7 +330,7 @@ footer {
 
 @media (max-width: 1250px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .grid {
     -ms-grid-columns: (1fr)[2];
@@ -340,6 +340,18 @@ footer {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  ul li a {
+    padding: 10px;
   }
 }
 
@@ -374,5 +386,53 @@ footer {
   .catInfo img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 755px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .galleryFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav {
+    height: 25vh;
+  }
+  .flex-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex-nav ul li {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
   }
 }
